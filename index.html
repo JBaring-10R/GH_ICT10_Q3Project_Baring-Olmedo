@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+<!-- BS SETUP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- CSS SETUP -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body class="p-4">
+
+<center><h2>𓊆ྀི ɪɴᴛʀᴀᴍᴜʀᴀʟꜱ ᴛᴇᴀᴍ ᴄʜᴇᴄᴋᴇʀ 𓊇ྀི</h2>
+
+<form>
+    <p>︶˚̣̣̣ ྀི ᴀʀᴇ ʏᴏᴜ ᴅᴏɴᴇ ᴡɪᴛʜ ᴛʜᴇ ᴏɴʟɪɴᴇ ʀᴇɢɪꜱᴛʀᴀᴛɪᴏɴ ? ᛝ</p>
+    <input type="radio" name="registration" value="yes"> ʏᴇꜱ
+    <input type="radio" name="registration" value="no"> ɴᴏ
+
+    <p class="mt-3">︶˚̣̣̣ ྀིྀ ᴅᴏ ʏᴏᴜ ʜᴀᴠᴇ ᴛʜᴇ ᴍᴇᴅɪᴄᴀʟ ᴄʟᴇᴀʀᴀɴᴄᴇ ꜰʀᴏᴍ ᴛʜᴇ ᴄʟɪɴɪᴄ ? ᛝ</p>
+    <input type="radio" name="medical" value="yes"> ʏᴇꜱ
+    <input type="radio" name="medical" value="no"> ɴᴏ
+
+    <p class="mt-3">︶˚̣̣̣ ྀིྀ ᴡʜᴀᴛ ɪꜱ ʏᴏᴜʀ ɢʀᴀᴅᴇ ᴀɴᴅ ꜱᴇᴄᴛɪᴏɴ ? ᛝ</p>
+    <select id="grade">
+        <option value="7">. ˖ ꒰𑁬 ɢʀᴀᴅᴇ 7 ໒꒱ ˖ .</option>
+        <option value="8">. ˖ ꒰𑁬 ɢʀᴀᴅᴇ 8 ໒꒱ ˖ .</option>
+        <option value="9">. ˖ ꒰𑁬 ɢʀᴀᴅᴇ 9 ໒꒱ ˖ .</option>
+        <option value="10">. ˖ ꒰𑁬 ɢʀᴀᴅᴇ 10 ໒꒱ ˖ .</option>
+    </select>
+
+    <select id="section">
+        <option value="Ruby">. ˖ ꒰𑁬 ʀᴜʙʏ ໒꒱ ˖ .</option>
+        <option value="Sapphire">. ˖ ꒰𑁬 ꜱᴀᴘᴘʜɪʀᴇ ໒꒱ ˖ .</option>
+        <option value="Emerald">. ˖ ꒰𑁬 Emerald ໒꒱ ˖ .</option>
+        <option value="Topaz">. ˖ ꒰𑁬 ᴛᴏᴘᴀᴢ ໒꒱ ˖ .</option>
+    </select>
+
+    <br><br>
+    <button type="button" class="btn btn-dark" py-click="check_team">꒰ ꜱɪɢɴ ᴜᴘ ꒱</button>
+</form>
+
+<hr>
+
+<div id="output"></div>
+<div id="image"></div></center>
+
+
+<py-script src="main.py"></py-script>
+
+</body>
+</html>
