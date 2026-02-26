@@ -177,3 +177,48 @@ button:hover {
             transition: 0.3s;
         }
 
+.players-container-new {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.players-container-new:hover {
+    transform: translateY(-3px);
+}
+
+.players-container-new h2 {
+    margin-bottom: 20px;
+    color: #101010;
+    font-family: 'Arial', sans-serif;
+}
+
+.players-list-new {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.players-list-new li {
+    padding: 8px 0;
+    font-size: 20px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #e0e0e0;
+    font-family: 'Arial', sans-serif; 
+}
+
+.players-list-new li:last-child {
+    border-bottom: none;
+}
+
+.players-list-new li:hover {
+    background-color: #f1f1f1;
+}
+
