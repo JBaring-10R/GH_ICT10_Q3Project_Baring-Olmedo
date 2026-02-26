@@ -153,48 +153,56 @@ button:hover {
             transition: 0.3s;
         }
 
-.players-container-new {
-    max-width: 500px;
-    margin: 40px auto;
-    padding: 30px;
-    background-color: #ffffff;
-    border-radius: 18px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-    text-align: center;
-    transition: 0.3s ease;
+/* Body background */
+body {
+  background: url("https://i.pinimg.com/736x/77/25/d4/7725d4fb4c6725a8fb8348647de84b1e.jpg") no-repeat center center/cover;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-.players-container-new:hover {
-    transform: translateY(-3px);
+.custom-navbar {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 12px 20px;
+  max-width: 900px;
+  margin: 0 auto 30px auto;
 }
 
-.players-container-new h2 {
-    margin-bottom: 20px;
-    color: #101010;
-    font-family: 'Arial', sans-serif;
+.nav-link.active {
+  font-weight: bold;
 }
 
-.players-list-new {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    max-height: 500px;
-    overflow-y: auto;
+.players-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  text-align: center;
 }
 
-.players-list-new li {
-    padding: 8px 0;
-    font-size: 20px;
-    letter-spacing: 1px;
-    border-bottom: 1px solid #e0e0e0;
-    font-family: 'Arial', sans-serif; 
+.players-container h2 {
+  margin-bottom: 20px;
+  color: #101010;
 }
 
-.players-list-new li:last-child {
-    border-bottom: none;
+.players-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 500px;
+  overflow-y: auto;
 }
 
-.players-list-new li:hover {
-    background-color: #f1f1f1;
+.players-list li {
+  padding: 8px 0;
+  font-size: 20px;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #e0e0e0;
 }
 
+.players-list li:last-child {
+  border-bottom: none;
+}
