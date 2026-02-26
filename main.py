@@ -1,6 +1,37 @@
 from js import document  # type: ignore
 from pyscript import display  # type: ignore
 
+def create_account(e):
+    username = document.getElementById("username").value
+    password = document.getElementById("password").value
+
+    document.getElementById("output").innerHTML = ""
+
+    if len(username) < 7:
+        display("❗ Username must contain at least 7 characters.", target="output")
+
+    else:
+        has_letter = False
+        has_number = False
+
+        for char in password:
+            if char.isalpha():
+                has_letter = True
+            elif char.isdigit():
+                has_number = True
+
+        if len(password) < 10:
+            display("❗ Password must be at least 10 characters long.", target="output")
+
+        elif not has_letter:
+            display("❗ Password must contain at least one letter.", target="output")
+
+        elif not has_number:
+            display("❗ Password must contain at least one number.", target="output")
+
+        else:
+            display("🎉 Account successfully created!", target="output")
+
 def check_team(event=None):
     output = document.getElementById("output")
     image = document.getElementById("image")
